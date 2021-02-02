@@ -26,3 +26,11 @@ npm i --save-dev @babel/cli @babel/core @babel/preset-env @babel/preset-react @b
 ```
 npm i --save-dev express webpack-dev-middleware http-proxy-middleware
 ```
+
+```
+npm i @hot-loader/react-dom react-hot-loader
+```
+
+```
+npm i --save-dev webpack-hot-middleware
+```

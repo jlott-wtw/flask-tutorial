@@ -9,6 +9,7 @@ const config = require('./webpack.config.js')
 let compiler = webpack(config)
 
 app.use(webpackDevMiddleware(compiler))
+app.use(require('webpack-hot-middleware')(compiler))
 
 app.use(
   '/',

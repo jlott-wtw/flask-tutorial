@@ -1,4 +1,5 @@
-const { useState } = React
+import { useState } from 'react'
+import { hot } from 'react-hot-loader/root'
 import './app.css'
 
 const HelloWorld = () => {
@@ -13,4 +14,4 @@ const HelloWorld = () => {
   )
 }
 
-export default HelloWorld
+export default hot(HelloWorld)

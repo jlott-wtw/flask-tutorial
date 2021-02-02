@@ -1,9 +1,13 @@
 const path = require('path')
+const webpack = require('webpack')
 
 module.exports = {
   mode: 'development',
   devtool: 'eval-source-map',
-  entry: './src/static/index.js',
+  entry: [
+    'webpack-hot-middleware/client?path=/__webpack_hmr&reload=true',
+    './src/static/index.js',
+  ],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'src/static'),
@@ -25,7 +29,10 @@ module.exports = {
                 },
               ],
             ],
-            plugins: ['@babel/plugin-transform-runtime'],
+            plugins: [
+              '@babel/plugin-transform-runtime',
+              'react-hot-loader/babel',
+            ],
           },
         },
       },
@@ -39,4 +46,10 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom',
+    },
+  },
+  plugins: [new webpack.HotModuleReplacementPlugin()],
 }
