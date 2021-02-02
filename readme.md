@@ -22,3 +22,7 @@ npm i react react-dom
 ```
 npm i --save-dev @babel/cli @babel/core @babel/preset-env @babel/preset-react @babel/plugin-transform-runtime babel-loader css-loader style-loader postcss-loader
 ```
+
+```
+npm i --save-dev express webpack-dev-middleware http-proxy-middleware
+```

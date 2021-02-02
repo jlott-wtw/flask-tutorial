@@ -6,6 +6,7 @@ const HelloWorld = () => {
   console.log('value', value)
   return (
     <div>
+      <h1>Webpack Dev Server</h1>
       <button onClick={() => setValue(value + 1)}>Like</button>
       <div>Count: {value}</div>
     </div>
