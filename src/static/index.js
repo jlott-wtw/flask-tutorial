@@ -1,1 +1,3 @@
-document.getElementById('app').innerText = 'hello from webpack'
+import HelloWorld from './app'
+
+ReactDOM.render(<HelloWorld />, document.getElementById('app'))
