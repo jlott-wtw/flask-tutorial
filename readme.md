@@ -1,5 +1,13 @@
 # Flask App with React
 
+> Make sure to upgrade node to LTS
+
+Check your node version
+
+```
+node --version
+```
+
 ## docker-compose
 
 ```bash
